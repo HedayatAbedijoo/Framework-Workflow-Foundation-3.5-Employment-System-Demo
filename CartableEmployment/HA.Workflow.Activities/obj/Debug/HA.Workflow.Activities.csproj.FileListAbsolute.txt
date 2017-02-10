@@ -1,0 +1,24 @@
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.pdb
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Activities\obj\Debug\Workflow.Activities.pdb

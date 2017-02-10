@@ -1,0 +1,206 @@
+WFTools - Installation Notes
+
+v0.3.0.0 - Alpha
+----------------
+
+Persistence
+-----------
+Oracle
+	WARNING Performing these steps will destroy any existing WF data you have!
+	1. Start a command prompt.
+	2. Navigate to the directory in which you extracted the source code and then to the
+	   child directory DB\Persistence\Oracle.
+	3. Start sqlplus using the following command line:
+	   sqlplus <user>/<pass>@<server>
+	4. Once successfully connected execute the Install.sql script as follows:
+	   @@Install.sql
+	   
+MySql
+	WARNING Performing these steps will destroy any existing WF data you have!
+	1. Start a command prompt.
+	2. Navigate to the directory in which you extracted the source code and then to the
+	   child directory DB\Persistence\MySql.
+	3. Start mysql using the following command line:
+	   mysql -u<user> -p<password> -h<server> -D<database>
+	4. Once successfully connected execute the Install.sql script as follows:
+	   source Install.sql
+	   
+Tracking
+--------
+Oracle
+	WARNING Performing these steps will destroy any existing WF data you have!
+	1. Start a command prompt.
+	2. Navigate to the directory in which you extracted the source code and then to the
+	   child directory DB\Tracking\Oracle.
+	3. Start sqlplus using the following command line:
+	   sqlplus <user>/<pass>@<server>
+	4. Once successfully connected execute the Install.sql script as follows:
+	   @@Install.sql
+	   
+MySql
+	WARNING Performing these steps will destroy any existing WF data you have!
+	1. Start a command prompt.
+	2. Navigate to the directory in which you extracted the source code and then to the
+	   child directory DB\Tracking\MySql.
+	3. Start mysql using the following command line:
+	   mysql -u<user> -p<password> -h<server> -D<database>
+	4. Once successfully connected execute the Install.sql script as follows:
+	   source Install.sql
+	   
+SQL Server
+	NOTE: These changes are necessary to support the functionality of the ADO tracking service.
+		  If you will be using the Microsoft provided tracking service there is no need to
+		  perform these steps, however, no ill effects will observed by doing so.
+		  
+	1. Start Query Analyzer / Management Studio.
+	2. Connect to the target database.
+	3. Create the SqlTrackingService's database by executing
+	   Tracking_Schema.sql and Tracking_Logic.sql located in 
+	   %SystemRoot%\Microsoft.NET\Framework\v3.0\Windows Workflow Foundation\SQL\EN
+	4. Choose open and navigate to the directory in which you extracted 
+	   the source code and then to the child directory DB\Tracking\Sql.
+	5. Load each file in the directory and execute it.
+
+Configuring Your Application
+----------------------------
+
+WFTools requires a number of configuration settings in order to function correctly.
+The sample project WFTools.Samples.Windows has a sample app.config file that you can use
+as a basis for your own applications.
+
+An example configuration file is annotated below:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<configSections>
+		<!-- 
+			REQUIRED
+			These entries tell the .NET configuration system how to handle our 
+			custom configuration sections.
+		-->
+		<section name="wftools.services.common.ado" type="WFTools.Services.Common.Ado.Configuration.CommonAdoProviderSettings,WFTools.Services" />
+		<section name="wftools.services.persistence.ado" type="WFTools.Services.Persistence.Ado.Configuration.PersistenceAdoProviderSettings,WFTools.Services" />
+		<section name="wftools.services.tracking.ado" type="WFTools.Services.Tracking.Ado.Configuration.TrackingAdoProviderSettings,WFTools.Services" />
+	</configSections>
+
+	<!-- Common ADO settings -->
+	<wftools.services.common.ado>
+		<!-- 
+			REQUIRED
+			Value Readers - these read data out of ADO.NET recordsets and commands.
+			Remove any that are not applicable to your environment.
+		-->
+		<valueReaders>
+			<add providerName="System.Data.SqlClient" type="WFTools.Services.Common.Ado.Sql.SqlValueReader,WFTools.Services" />
+			<add providerName="System.Data.OracleClient" type="WFTools.Services.Common.Ado.Oracle.OracleValueReader,WFTools.Services" />
+			<add providerName="Oracle.DataAccess.Client" type="WFTools.Services.Odp.OdpValueReader,WFTools.Services.Odp" />
+			<add providerName="MySql.Data.MySqlClient" type="WFTools.Services.MySql.MySqlValueReader,WFTools.Services.MySql" />
+		</valueReaders>
+		<!-- 
+			REQUIRED
+			Resource Providers - these provide ADO.NET resources to workflow services.
+			Remove any that are not applicable to your environment.
+		-->
+		<resourceProviders>
+			<add providerName="System.Data.OracleClient" type="WFTools.Services.Common.Ado.Oracle.OracleResourceProvider,WFTools.Services" />
+			<add providerName="Oracle.DataAccess.Client" type="WFTools.Services.Odp.OdpResourceProvider,WFTools.Services.Odp" />
+			<add providerName="MySql.Data.MySqlClient" type="WFTools.Services.MySql.MySqlResourceProvider,WFTools.Services.MySql" />
+		</resourceProviders>
+	</wftools.services.common.ado>
+
+	<wftools.services.persistence.ado>
+		<!--
+			REQUIRED
+			Name Resolvers - these resolve Persistence command names.
+			Remove any that are not applicable to your environment.
+		-->
+		<nameResolvers>
+			<add providerName="System.Data.SqlClient" type="WFTools.Services.Persistence.Ado.Sql.SqlPersistenceNameResolver,WFTools.Services" />
+			<add providerName="System.Data.OracleClient" type="WFTools.Services.Persistence.Ado.Oracle.OraclePersistenceNameResolver,WFTools.Services" />
+			<add providerName="Oracle.DataAccess.Client" type="WFTools.Services.Odp.Persistence.OdpPersistenceNameResolver,WFTools.Services.Odp" />
+			<add providerName="MySql.Data.MySqlClient" type="WFTools.Services.MySql.Persistence.MySqlPersistenceNameResolver,WFTools.Services.MySql" />
+		</nameResolvers>
+	</wftools.services.persistence.ado>
+
+	<wftools.services.tracking.ado>
+		<!--
+			REQUIRED
+			Name Resolvers - these resolve Tracking command names.
+			Remove any that are not applicable to your environment.
+		-->
+		<nameResolvers>
+			<add providerName="System.Data.SqlClient" type="WFTools.Services.Tracking.Ado.Sql.SqlTrackingNameResolver,WFTools.Services" />
+			<add providerName="System.Data.OracleClient" type="WFTools.Services.Tracking.Ado.Oracle.OracleTrackingNameResolver,WFTools.Services" />
+			<add providerName="Oracle.DataAccess.Client" type="WFTools.Services.Odp.Tracking.OdpTrackingNameResolver,WFTools.Services.Odp" />
+			<add providerName="MySql.Data.MySqlClient" type="WFTools.Services.MySql.Tracking.MySqlTrackingNameResolver,WFTools.Services.MySql" />
+		</nameResolvers>
+		<!--
+			OPTIONAL
+			Resource Accessors - depending on your ADO.NET provider you may not require this section.
+			Current custom resource accessors are provided for SQL Server and ODP.NET, if you use
+			System.Data.OracleClient or MySql then you won't need this!
+		-->
+		<resourceAccessors>
+			<add providerName="System.Data.SqlClient" type="WFTools.Services.Tracking.Ado.Sql.SqlTrackingResourceAccessor,WFTools.Services" />
+			<add providerName="System.Data.OracleClient" type="WFTools.Services.Tracking.Ado.Oracle.OracleTrackingResourceAccessor,WFTools.Services" />
+			<add providerName="Oracle.DataAccess.Client" type="WFTools.Services.Odp.Tracking.OdpTrackingResourceAccessor,WFTools.Services.Odp" />
+		</resourceAccessors>
+	</wftools.services.tracking.ado>
+
+	<!--
+		OPTIONAL
+		Connection Strings - you can specify these in code or use configuration like below.
+		Customise for your application.
+	-->
+	<connectionStrings>
+		<clear />
+		<add name="SQL Server" providerName="System.Data.SqlClient" connectionString="server=localhost;database=WFTOOLS;Integrated Security=SSPI" />
+		<add name="Oracle - MS" providerName="System.Data.OracleClient" connectionString="Data Source=WFTOOLS;user id=WFTOOLS;password=WFTOOLS;" />
+		<add name="Oracle - ODP.NET" providerName="Oracle.DataAccess.Client" connectionString="Data Source=WFTOOLS;user id=WFTOOLS;password=WFTOOLS;" />
+		<add name="MySQL" providerName="MySql.Data.MySqlClient" connectionString="Server=localhost;Database=wftools;Uid=wftools;Pwd=wftools;" />
+	</connectionStrings>
+
+	<!--
+		OPTIONAL
+		Workflow Diagnostics - used for logging useful information for debugging purposes
+	-->
+	<system.diagnostics>
+		<switches>
+			<add name="System.Workflow.Runtime" value="Off" />
+			<add name="System.Workflow.Runtime.Hosting" value="Off" />
+			<add name="System.Workflow.Runtime.Tracking" value="Off" />
+			<add name="System.Workflow.Activities" value="Off" />
+			<add name="System.Workflow.Activities.Rules" value="Off" />
+			<add name="System.Workflow LogToTraceListeners" value="1" />
+			<add name="System.Workflow LogToFile" value="0" />
+		</switches>
+	</system.diagnostics>
+
+</configuration>
+
+Once the settings above are configured you create a WorkflowRuntime and add the necessary services to it...
+E.g.
+
+WorkflowRuntime workflowRuntime = new WorkflowRuntime();
+ConnectionStringSettings defaultConnectionString = ConfigurationManager.ConnectionStrings["Default"];
+
+//  add a persistence service
+workflowRuntime.AddService(new AdoPersistenceService(
+	defaultConnectionString, true, TimeSpan.FromMinutes(1), 
+	TimeSpan.FromMinutes(1));
+	
+// add a tracking service
+workflowRuntime.AddService(new AdoTrackingService(defaultConnectionString));
+
+// add the connection sharing service
+workflowRuntime.AddService(new AdoWorkBatchService());
+// *OR*
+// if your ADO provider does not support promotable single phase enlistment
+// (e.g. Oracle, MySql, SQL Server 2000) AND you use the same connection string
+// for both persistence and tracking services (or just use one service) then use 
+// the following overload of AdoWorkBatchService. See code-doc for details.
+workflowRuntime.AddService(new AdoWorkBatchService(true));
+
+workflowRuntime.StartRuntime();
+
+For further information take a look at the sample WinForms app.

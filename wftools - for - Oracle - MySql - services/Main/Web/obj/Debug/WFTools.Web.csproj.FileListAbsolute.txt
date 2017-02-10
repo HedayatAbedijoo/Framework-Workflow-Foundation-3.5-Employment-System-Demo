@@ -1,0 +1,5 @@
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Web\bin\Debug\WFTools.Web.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Web\bin\Debug\WFTools.Web.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Web\obj\Debug\WFTools.Web.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Web\obj\Debug\WFTools.Web.pdb

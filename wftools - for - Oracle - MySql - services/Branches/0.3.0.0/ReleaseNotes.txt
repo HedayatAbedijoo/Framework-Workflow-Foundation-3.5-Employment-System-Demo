@@ -1,0 +1,35 @@
+WFTools - Release Notes
+
+v0.3.0.0 - Alpha
+----------------
+
+New Features
+-------------
+
+Generic Tracking Service
+	- ADO implementation with support for MS SQL Server, Oracle (MS/ODP.NET) and MySql
+
+Generic Persistence Service
+	- Support for MySql - requires at least MySql/Connector.NET 5.1.3 and MySql 5.1
+	
+ADO Batching Service
+	- Allows connection sharing amongst services with identical connection strings
+	  and forcing the use of local transactions in resource managers that do not
+	  support promotable single phase enlistment (PSPE) such as Oracle, MySql and
+	  SQL Server 2000.
+	  
+Breaking Changes
+----------------
+Generic Persistence Service
+	- refactored - different class / interface names - configuration files may need changing
+	- Oracle implementation - WORKFLOW_PKG is now called WORKFLOW_PERSISTENCE_PKG
+
+Known Limitations
+-----------------
+
+This release does not support querying the tracking database. This will be provided
+as a point release in the near future.
+
+The tracking service provides no support for partitioning and is unlikely to be 
+implemented (shouldn't partitioning be performed by the DBA at a database level, 
+not by a developer in software!?).

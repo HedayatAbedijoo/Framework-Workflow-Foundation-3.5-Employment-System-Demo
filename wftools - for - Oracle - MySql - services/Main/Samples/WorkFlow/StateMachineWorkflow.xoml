@@ -1,0 +1,13 @@
+﻿<StateMachineWorkflowActivity x:Class="WFTools.Samples.WorkFlow.StateMachineWorkflow" InitialStateName="Started" x:Name="StateMachineWorkflow" DynamicUpdateCondition="{x:Null}" CompletedStateName="Completed" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateActivity x:Name="Started">
+		<EventDrivenActivity x:Name="AwaitDelay">
+			<DelayActivity TimeoutDuration="00:01:00" x:Name="Delay" />
+			<SetStateActivity x:Name="DelaySetCompletedState" TargetStateName="Completed" />
+		</EventDrivenActivity>
+		<EventDrivenActivity x:Name="AwaitEvent">
+			<HandleExternalEventActivity x:Name="HandleEvent" EventName="Completed" InterfaceType="{x:Type WFTools.Samples.WorkFlow.Services.IStateMachineService}" />
+			<SetStateActivity x:Name="EventSetCompletedState" TargetStateName="Completed" />
+		</EventDrivenActivity>
+	</StateActivity>
+	<StateActivity x:Name="Completed" />
+</StateMachineWorkflowActivity>

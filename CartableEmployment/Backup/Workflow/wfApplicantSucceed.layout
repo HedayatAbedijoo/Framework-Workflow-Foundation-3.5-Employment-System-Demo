@@ -1,0 +1,55 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="wfApplicantSucceed" Location="30, 30" Size="863, 531" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="CompleteDocumentState" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity1" SourceStateName="CallEmployeeState" SourceConnectionEdge="Right" TargetActivity="CompleteDocumentState" SourceActivity="CallEmployeeState" EventHandlerName="eventDrivenActivity1">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="481" Y="147" />
+				<ns0:Point X="525" Y="147" />
+				<ns0:Point X="525" Y="179" />
+				<ns0:Point X="429" Y="179" />
+				<ns0:Point X="429" Y="191" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="DeliverJobState" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity2" SourceStateName="CompleteDocumentState" SourceConnectionEdge="Right" TargetActivity="DeliverJobState" SourceActivity="CompleteDocumentState" EventHandlerName="eventDrivenActivity2">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="488" Y="256" />
+				<ns0:Point X="528" Y="256" />
+				<ns0:Point X="528" Y="323" />
+				<ns0:Point X="424" Y="323" />
+				<ns0:Point X="424" Y="335" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="CallEmployeeState" Location="335, 82" Size="185, 80" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity1" Location="343, 113">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo1" Location="353, 175" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="150, 182" Name="eventDrivenActivity1" Location="343, 137">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext1" Location="353, 199" />
+						<SetStateDesigner Size="130, 41" Name="setStateActivity1" Location="353, 259" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="CompleteDocumentState" Location="342, 191" Size="175, 80" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity2" Location="350, 222">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo2" Location="360, 284" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="150, 182" Name="eventDrivenActivity2" Location="350, 246">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext2" Location="360, 308" />
+						<SetStateDesigner Size="130, 41" Name="setStateActivity2" Location="360, 368" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="DeliverJobState" Location="337, 335" Size="175, 80" AutoSizeMargin="16, 24" />
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

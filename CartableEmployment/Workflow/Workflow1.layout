@@ -1,0 +1,28 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="Workflow1" Location="30, 30" Size="881, 531" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="RegisterApplicant" Location="250, 179" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity1" Location="258, 210">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo1" Location="268, 272" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="381, 363" Name="eventDrivenActivity1" Location="258, 234">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext1" Location="383, 296" />
+						<ns1:IfElseDesignerCustom Size="361, 222" Name="ifElseActivityCustom1" Location="268, 356" xmlns:ns1="clr-namespace:Workflow.Activities.IfElse;Assembly=Workflow.Activities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ns1:IfElseDesignerCustom.Designers>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom1" Location="287, 427">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity1" Location="297, 489" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom2" Location="460, 427" />
+							</ns1:IfElseDesignerCustom.Designers>
+						</ns1:IfElseDesignerCustom>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

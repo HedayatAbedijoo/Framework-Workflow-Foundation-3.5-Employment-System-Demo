@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[RioterDecker.Workflow.Activities.csproj]
+SCC_Aux_Path = "D:\Bank\VSSDatabase"
+SCC_Project_Name = "$/CompleteCartable/CompleteCartable/RioterDecker.Workflow.Activities", UXKAAAAA
+
+[Workflow.Activities.csproj]
+SCC_Aux_Path = "D:\Project\Darmangah\SourceSafe"
+SCC_Project_Name = "$/Cartable/CompleteCartable/RioterDecker.Workflow.Activities", RXIAAAAA
+
+[HA.Workflow.Activities.csproj]
+SCC_Aux_Path = "D:\Project\Darmangah\SourceSafe"
+SCC_Project_Name = "$/Cartable/CartableEmployment/Cartable/HA.Workflow.Activities", MCJAAAAA

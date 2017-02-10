@@ -1,0 +1,52 @@
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\Workflow.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\Workflow.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.pdb
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.dll
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.pdb
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.dll
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.dll
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\Workflow.dll
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.dll
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.pdb
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.pdb
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.pdb
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\bin\Debug\Workflow.pdb
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\obj\Debug\ResolveAssemblyReference.cache
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.dll
+D:\Programming\Cartable\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.CartableService.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\DataLayer.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\HA.Workflow.Services.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\bin\Debug\Workflow.Activities.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.csprojResolveAssemblyReference.cache
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.CartableService\obj\Debug\HA.CartableService.pdb

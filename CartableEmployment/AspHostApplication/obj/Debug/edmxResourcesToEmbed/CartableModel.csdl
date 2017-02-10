@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CartableEmploymentModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="CartableEmploymentEntities">
+    <EntitySet Name="CompletedScope" EntityType="CartableEmploymentModel.CompletedScope" />
+    <EntitySet Name="InstanceState" EntityType="CartableEmploymentModel.InstanceState" />
+    <EntitySet Name="sysdiagrams" EntityType="CartableEmploymentModel.sysdiagrams" />
+    <EntitySet Name="wfActivityStates" EntityType="CartableEmploymentModel.wfActivityStates" />
+    <EntitySet Name="wfCartable" EntityType="CartableEmploymentModel.wfCartable" />
+    <EntitySet Name="wfProfile" EntityType="CartableEmploymentModel.wfProfile" />
+    <EntitySet Name="wfUsers" EntityType="CartableEmploymentModel.wfUsers" />
+    <EntitySet Name="wfWorkflowStatus" EntityType="CartableEmploymentModel.wfWorkflowStatus" />
+    <AssociationSet Name="FK_wfActivityStates_wfUsers" Association="CartableEmploymentModel.FK_wfActivityStates_wfUsers">
+      <End Role="wfUsers" EntitySet="wfUsers" />
+      <End Role="wfActivityStates" EntitySet="wfActivityStates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wfCartable_wfActivityStates" Association="CartableEmploymentModel.FK_wfCartable_wfActivityStates">
+      <End Role="wfActivityStates" EntitySet="wfActivityStates" />
+      <End Role="wfCartable" EntitySet="wfCartable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wfCartable_wfWorkflowStatus" Association="CartableEmploymentModel.FK_wfCartable_wfWorkflowStatus">
+      <End Role="wfWorkflowStatus" EntitySet="wfWorkflowStatus" />
+      <End Role="wfCartable" EntitySet="wfCartable" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CompletedScope">
+    <Key>
+      <PropertyRef Name="uidInstanceID" />
+      <PropertyRef Name="completedScopeID" />
+      <PropertyRef Name="modified" />
+    </Key>
+    <Property Name="uidInstanceID" Type="Guid" Nullable="false" />
+    <Property Name="completedScopeID" Type="Guid" Nullable="false" />
+    <Property Name="state" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="modified" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InstanceState">
+    <Key>
+      <PropertyRef Name="uidInstanceID" />
+      <PropertyRef Name="modified" />
+    </Key>
+    <Property Name="uidInstanceID" Type="Guid" Nullable="false" />
+    <Property Name="state" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="unlocked" Type="Int32" />
+    <Property Name="blocked" Type="Int32" />
+    <Property Name="info" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="modified" Type="DateTime" Nullable="false" />
+    <Property Name="ownerID" Type="Guid" />
+    <Property Name="ownedUntil" Type="DateTime" />
+    <Property Name="nextTimer" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="wfActivityStates">
+    <Key>
+      <PropertyRef Name="ActivityStateName" />
+    </Key>
+    <Property Name="ActivityStateName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OBJ_VERSION" Type="Decimal" Nullable="false" Precision="8" Scale="0" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="PageKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="wfUsers" Relationship="CartableEmploymentModel.FK_wfActivityStates_wfUsers" FromRole="wfActivityStates" ToRole="wfUsers" />
+    <NavigationProperty Name="wfCartable" Relationship="CartableEmploymentModel.FK_wfCartable_wfActivityStates" FromRole="wfActivityStates" ToRole="wfCartable" />
+  </EntityType>
+  <EntityType Name="wfCartable">
+    <Key>
+      <PropertyRef Name="CartableId" />
+    </Key>
+    <Property Name="CartableId" Type="Guid" Nullable="false" />
+    <Property Name="WorkflowId" Type="Guid" Nullable="false" />
+    <Property Name="ParentWorkflowId" Type="Guid" />
+    <Property Name="ItemId" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="2500" Unicode="true" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="ActionDate" Type="DateTime" />
+    <NavigationProperty Name="wfActivityStates" Relationship="CartableEmploymentModel.FK_wfCartable_wfActivityStates" FromRole="wfCartable" ToRole="wfActivityStates" />
+    <NavigationProperty Name="wfWorkflowStatus" Relationship="CartableEmploymentModel.FK_wfCartable_wfWorkflowStatus" FromRole="wfCartable" ToRole="wfWorkflowStatus" />
+  </EntityType>
+  <EntityType Name="wfProfile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="FistName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IdentityNo" Type="Int32" />
+    <Property Name="Gender" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Degree" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RegistDate" Type="DateTime" />
+    <Property Name="IsRegisterOk" Type="Boolean" />
+    <Property Name="Occupation" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="YearExperiences" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Experiences" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Interesting" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="IsDocumentsOK" Type="Boolean" />
+    <Property Name="IQScore" Type="Int32" />
+    <Property Name="LanguageScore" Type="Int32" />
+    <Property Name="TechnicalScore" Type="Int32" />
+    <Property Name="PersonalityScore" Type="Int32" />
+  </EntityType>
+  <EntityType Name="wfUsers">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="wfActivityStates" Relationship="CartableEmploymentModel.FK_wfActivityStates_wfUsers" FromRole="wfUsers" ToRole="wfActivityStates" />
+  </EntityType>
+  <EntityType Name="wfWorkflowStatus">
+    <Key>
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StatusName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="wfCartable" Relationship="CartableEmploymentModel.FK_wfCartable_wfWorkflowStatus" FromRole="wfWorkflowStatus" ToRole="wfCartable" />
+  </EntityType>
+  <Association Name="FK_wfActivityStates_wfUsers">
+    <End Role="wfUsers" Type="CartableEmploymentModel.wfUsers" Multiplicity="1" />
+    <End Role="wfActivityStates" Type="CartableEmploymentModel.wfActivityStates" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_wfCartable_wfActivityStates">
+    <End Role="wfActivityStates" Type="CartableEmploymentModel.wfActivityStates" Multiplicity="1" />
+    <End Role="wfCartable" Type="CartableEmploymentModel.wfCartable" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_wfCartable_wfWorkflowStatus">
+    <End Role="wfWorkflowStatus" Type="CartableEmploymentModel.wfWorkflowStatus" Multiplicity="0..1" />
+    <End Role="wfCartable" Type="CartableEmploymentModel.wfCartable" Multiplicity="*" />
+  </Association>
+</Schema>

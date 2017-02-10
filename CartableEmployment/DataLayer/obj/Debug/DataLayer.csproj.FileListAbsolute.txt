@@ -1,0 +1,21 @@
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\DataLayer\bin\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\DataLayer\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\DataLayer\obj\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\DataLayer\obj\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\DataLayer\bin\Debug\DataLayer.dll.config
+D:\Programming\Cartable\CartableEmployment\DataLayer\bin\Debug\DataLayer.dll
+D:\Programming\Cartable\CartableEmployment\DataLayer\bin\Debug\DataLayer.pdb
+D:\Programming\Cartable\CartableEmployment\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Programming\Cartable\CartableEmployment\DataLayer\obj\Debug\DataLayer.dll
+D:\Programming\Cartable\CartableEmployment\DataLayer\obj\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\DataLayer\bin\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\DataLayer\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\DataLayer\obj\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\DataLayer\obj\Debug\DataLayer.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\DataLayer\bin\Debug\DataLayer.dll
+D:\Projects\Workflow Documentation\CartableEmployment\DataLayer\bin\Debug\DataLayer.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+D:\Projects\Workflow Documentation\CartableEmployment\DataLayer\obj\Debug\DataLayer.dll
+D:\Projects\Workflow Documentation\CartableEmployment\DataLayer\obj\Debug\DataLayer.pdb

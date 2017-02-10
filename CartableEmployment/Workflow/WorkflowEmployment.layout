@@ -1,0 +1,200 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="WorkflowEmployment" Location="30, 30" Size="868, 750" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="CheckDocuments" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity1" SourceStateName="RegisterApplicant" SourceConnectionEdge="Left" TargetActivity="CheckDocuments" SourceActivity="RegisterApplicant" EventHandlerName="eventDrivenActivity1">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="400" Y="146" />
+				<ns0:Point X="370" Y="146" />
+				<ns0:Point X="370" Y="245" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="RejectApplicant" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity2" SourceStateName="RegisterApplicant" SourceConnectionEdge="Right" TargetActivity="RejectApplicant" SourceActivity="RegisterApplicant" EventHandlerName="eventDrivenActivity1">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="542" Y="146" />
+				<ns0:Point X="780" Y="146" />
+				<ns0:Point X="780" Y="401" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Interview" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity3" SourceStateName="CheckDocuments" SourceConnectionEdge="Left" TargetActivity="Interview" SourceActivity="CheckDocuments" EventHandlerName="eventDrivenActivity2">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="287" Y="310" />
+				<ns0:Point X="277" Y="310" />
+				<ns0:Point X="277" Y="366" />
+				<ns0:Point X="365" Y="366" />
+				<ns0:Point X="365" Y="378" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="RegisterApplicant" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity9" SourceStateName="CheckDocuments" SourceConnectionEdge="Left" TargetActivity="RegisterApplicant" SourceActivity="CheckDocuments" EventHandlerName="eventDrivenActivity2">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="287" Y="310" />
+				<ns0:Point X="275" Y="310" />
+				<ns0:Point X="275" Y="73" />
+				<ns0:Point X="483" Y="73" />
+				<ns0:Point X="483" Y="81" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="RejectApplicant" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity4" SourceStateName="CheckDocuments" SourceConnectionEdge="Right" TargetActivity="RejectApplicant" SourceActivity="CheckDocuments" EventHandlerName="eventDrivenActivity2">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="429" Y="310" />
+				<ns0:Point X="780" Y="310" />
+				<ns0:Point X="780" Y="401" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ConfirmEmployement" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity5" SourceStateName="Interview" SourceConnectionEdge="Left" TargetActivity="ConfirmEmployement" SourceActivity="Interview" EventHandlerName="eventDrivenActivity3">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="282" Y="443" />
+				<ns0:Point X="266" Y="443" />
+				<ns0:Point X="266" Y="513" />
+				<ns0:Point X="346" Y="513" />
+				<ns0:Point X="346" Y="525" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="RejectApplicant" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity6" SourceStateName="Interview" SourceConnectionEdge="Right" TargetActivity="RejectApplicant" SourceActivity="Interview" EventHandlerName="eventDrivenActivity3">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="424" Y="443" />
+				<ns0:Point X="465" Y="443" />
+				<ns0:Point X="465" Y="393" />
+				<ns0:Point X="780" Y="393" />
+				<ns0:Point X="780" Y="401" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Finish" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity7" SourceStateName="ConfirmEmployement" SourceConnectionEdge="Right" TargetActivity="Finish" SourceActivity="ConfirmEmployement" EventHandlerName="eventDrivenActivity4">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="405" Y="590" />
+				<ns0:Point X="496" Y="590" />
+				<ns0:Point X="496" Y="670" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Finish" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity8" SourceStateName="RejectApplicant" SourceConnectionEdge="Right" TargetActivity="Finish" SourceActivity="RejectApplicant" EventHandlerName="eventDrivenActivity5">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="839" Y="466" />
+				<ns0:Point X="880" Y="466" />
+				<ns0:Point X="880" Y="658" />
+				<ns0:Point X="496" Y="658" />
+				<ns0:Point X="496" Y="670" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="RegisterApplicant" Location="396, 81" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity1" Location="404, 112">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo2" Location="414, 174" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="381, 363" Name="eventDrivenActivity1" Location="404, 136">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext1" Location="529, 198" />
+						<ns1:IfElseDesignerCustom Size="361, 222" Name="ifElseActivityCustom1" Location="414, 258" xmlns:ns1="clr-namespace:Workflow.Activities.IfElse;Assembly=Workflow.Activities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ns1:IfElseDesignerCustom.Designers>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom1" Location="433, 329">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity1" Location="443, 391" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom2" Location="606, 329">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity2" Location="616, 391" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+							</ns1:IfElseDesignerCustom.Designers>
+						</ns1:IfElseDesignerCustom>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="CheckDocuments" Location="283, 245" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity2" Location="291, 276">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo3" Location="301, 338" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="554, 363" Name="eventDrivenActivity2" Location="291, 300">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext2" Location="503, 362" />
+						<ns1:IfElseDesignerCustom Size="534, 222" Name="ifElseActivityCustom2" Location="301, 422" xmlns:ns1="clr-namespace:Workflow.Activities.IfElse;Assembly=Workflow.Activities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ns1:IfElseDesignerCustom.Designers>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom3" Location="320, 493">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity3" Location="330, 555" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom7" Location="493, 493">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity9" Location="503, 555" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom4" Location="666, 493">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity4" Location="676, 555" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+							</ns1:IfElseDesignerCustom.Designers>
+						</ns1:IfElseDesignerCustom>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Interview" Location="278, 378" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity3" Location="286, 409">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo1" Location="296, 471" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="381, 363" Name="eventDrivenActivity3" Location="286, 433">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext3" Location="411, 495" />
+						<ns1:IfElseDesignerCustom Size="361, 222" Name="ifElseActivityCustom3" Location="296, 555" xmlns:ns1="clr-namespace:Workflow.Activities.IfElse;Assembly=Workflow.Activities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ns1:IfElseDesignerCustom.Designers>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom5" Location="315, 626">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity5" Location="325, 688" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+								<ns1:IfElseBranchDesignerCustom Size="150, 122" Name="ifElseBranchActivityCustom6" Location="488, 626">
+									<ns1:IfElseBranchDesignerCustom.Designers>
+										<SetStateDesigner Size="130, 41" Name="setStateActivity6" Location="498, 688" />
+									</ns1:IfElseBranchDesignerCustom.Designers>
+								</ns1:IfElseBranchDesignerCustom>
+							</ns1:IfElseDesignerCustom.Designers>
+						</ns1:IfElseDesignerCustom>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="ConfirmEmployement" Location="259, 525" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 182" Name="stateInitializationActivity4" Location="267, 556">
+					<StateInitializationDesigner.Designers>
+						<ns2:SubWorkflowDesigner Size="130, 41" Name="subWorkflowActivity1" Location="277, 618" xmlns:ns2="clr-namespace:HA.Workflow.Services.Controls.SubWorkflow;Assembly=HA.Workflow.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo4" Location="277, 678" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="150, 182" Name="eventDrivenActivity4" Location="267, 580">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext4" Location="277, 642" />
+						<SetStateDesigner Size="130, 41" Name="setStateActivity7" Location="277, 702" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Finish" Location="416, 670" Size="160, 80" AutoSizeMargin="16, 24" />
+		<StateDesigner Name="RejectApplicant" Location="693, 401" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="150, 122" Name="stateInitializationActivity6" Location="701, 432">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="130, 41" Name="onPageToGoTo5" Location="711, 494" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="150, 182" Name="eventDrivenActivity5" Location="701, 456">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="goNext5" Location="711, 518" />
+						<SetStateDesigner Size="130, 41" Name="setStateActivity8" Location="711, 578" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

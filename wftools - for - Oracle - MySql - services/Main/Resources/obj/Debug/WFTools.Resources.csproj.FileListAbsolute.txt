@@ -1,0 +1,9 @@
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\bin\Debug\WFTools.Resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\bin\Debug\WFTools.Resources.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\bin\Debug\en-GB\WFTools.Resources.resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\obj\Debug\WFTools.Resources.Strings.en-GB.resources
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\obj\Debug\WFTools.Resources.csproj.GenerateResource.Cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\obj\Debug\en-GB\WFTools.Resources.resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\obj\Debug\WFTools.Resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Resources\obj\Debug\WFTools.Resources.pdb

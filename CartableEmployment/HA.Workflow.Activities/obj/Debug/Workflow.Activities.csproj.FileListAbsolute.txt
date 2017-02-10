@@ -1,0 +1,15 @@
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\RioterDecker.Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\RioterDecker.Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\RioterDecker.Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\RioterDecker.Workflow.Activities.pdb
+D:\Programming\Cartable\CompleteCartable(1388-06-19)\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+D:\Programming\Cartable\CompleteCartable(1388-06-19)\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+D:\Programming\Cartable\CompleteCartable(1388-06-19)\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+D:\Programming\Cartable\CompleteCartable(1388-06-19)\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+D:\Programming\Cartable\CompleteCartable(1388-06-19)\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Cartable\CompleteCartable\RioterDecker.Workflow.Activities\obj\Debug\Workflow.Activities.pdb

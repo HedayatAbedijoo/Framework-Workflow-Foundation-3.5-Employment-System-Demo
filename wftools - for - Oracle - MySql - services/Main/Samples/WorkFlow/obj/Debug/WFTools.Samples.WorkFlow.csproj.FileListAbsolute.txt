@@ -1,0 +1,13 @@
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Samples.WorkFlow.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Samples.WorkFlow.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Services.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Utilities.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Resources.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Services.xml
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\WFTools.Utilities.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\bin\Debug\en-GB\WFTools.Resources.resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\obj\Debug\WFTools.Samples.WorkFlow.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Samples\WorkFlow\obj\Debug\WFTools.Samples.WorkFlow.pdb

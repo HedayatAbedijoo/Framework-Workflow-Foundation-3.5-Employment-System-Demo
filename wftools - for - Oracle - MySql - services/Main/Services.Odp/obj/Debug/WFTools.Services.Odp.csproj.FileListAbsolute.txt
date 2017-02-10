@@ -1,0 +1,14 @@
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Services.Odp.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Services.Odp.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\Oracle.DataAccess.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Services.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Utilities.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Utilities.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Services.xml
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\WFTools.Resources.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\bin\Debug\en-GB\WFTools.Resources.resources.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\obj\Debug\WFTools.Services.Odp.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\wftools-Third Party- Oracle - MySql\Main\Services.Odp\obj\Debug\WFTools.Services.Odp.pdb

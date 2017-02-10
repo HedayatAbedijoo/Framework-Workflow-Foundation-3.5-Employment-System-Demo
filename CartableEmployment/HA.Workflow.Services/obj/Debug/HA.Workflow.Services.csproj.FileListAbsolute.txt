@@ -1,0 +1,36 @@
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\WorkFlow\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.pdb
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.dll
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.pdb
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.dll
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.dll
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.pdb
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.pdb
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\obj\Debug\ResolveAssemblyReference.cache
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.dll
+D:\Programming\Cartable\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.dll
+C:\Documents and Settings\hedayat\Desktop\Workflow Documentation\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\HA.Workflow.Services.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\DataLayer.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\bin\Debug\Workflow.Activities.pdb
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.csprojResolveAssemblyReference.cache
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.dll
+D:\Projects\Workflow Documentation\CartableEmployment\HA.Workflow.Services\obj\Debug\HA.Workflow.Services.pdb

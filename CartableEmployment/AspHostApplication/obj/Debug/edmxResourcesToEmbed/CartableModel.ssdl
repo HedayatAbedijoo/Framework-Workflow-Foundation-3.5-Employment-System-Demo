@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CartableEmploymentModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="CartableEmploymentModelStoreContainer">
+    <EntitySet Name="CompletedScope" EntityType="CartableEmploymentModel.Store.CompletedScope" store:Type="Tables" store:Schema="dbo" store:Name="CompletedScope">
+      <DefiningQuery>SELECT 
+      [CompletedScope].[uidInstanceID] AS [uidInstanceID], 
+      [CompletedScope].[completedScopeID] AS [completedScopeID], 
+      [CompletedScope].[state] AS [state], 
+      [CompletedScope].[modified] AS [modified]
+      FROM [dbo].[CompletedScope] AS [CompletedScope]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="InstanceState" EntityType="CartableEmploymentModel.Store.InstanceState" store:Type="Tables" store:Schema="dbo" store:Name="InstanceState">
+      <DefiningQuery>SELECT 
+      [InstanceState].[uidInstanceID] AS [uidInstanceID], 
+      [InstanceState].[state] AS [state], 
+      [InstanceState].[status] AS [status], 
+      [InstanceState].[unlocked] AS [unlocked], 
+      [InstanceState].[blocked] AS [blocked], 
+      [InstanceState].[info] AS [info], 
+      [InstanceState].[modified] AS [modified], 
+      [InstanceState].[ownerID] AS [ownerID], 
+      [InstanceState].[ownedUntil] AS [ownedUntil], 
+      [InstanceState].[nextTimer] AS [nextTimer]
+      FROM [dbo].[InstanceState] AS [InstanceState]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysdiagrams" EntityType="CartableEmploymentModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="wfActivityStates" EntityType="CartableEmploymentModel.Store.wfActivityStates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="wfCartable" EntityType="CartableEmploymentModel.Store.wfCartable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="wfProfile" EntityType="CartableEmploymentModel.Store.wfProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="wfUsers" EntityType="CartableEmploymentModel.Store.wfUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="wfWorkflowStatus" EntityType="CartableEmploymentModel.Store.wfWorkflowStatus" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_wfActivityStates_wfUsers" Association="CartableEmploymentModel.Store.FK_wfActivityStates_wfUsers">
+      <End Role="wfUsers" EntitySet="wfUsers" />
+      <End Role="wfActivityStates" EntitySet="wfActivityStates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wfCartable_wfActivityStates" Association="CartableEmploymentModel.Store.FK_wfCartable_wfActivityStates">
+      <End Role="wfActivityStates" EntitySet="wfActivityStates" />
+      <End Role="wfCartable" EntitySet="wfCartable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wfCartable_wfWorkflowStatus" Association="CartableEmploymentModel.Store.FK_wfCartable_wfWorkflowStatus">
+      <End Role="wfWorkflowStatus" EntitySet="wfWorkflowStatus" />
+      <End Role="wfCartable" EntitySet="wfCartable" />
+    </AssociationSet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'CartableEmployment.dbo.CompletedScope' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="CompletedScope">
+    <Key>
+      <PropertyRef Name="uidInstanceID" />
+      <PropertyRef Name="completedScopeID" />
+      <PropertyRef Name="modified" />
+    </Key>
+    <Property Name="uidInstanceID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="completedScopeID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="state" Type="image" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'CartableEmployment.dbo.InstanceState' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="InstanceState">
+    <Key>
+      <PropertyRef Name="uidInstanceID" />
+      <PropertyRef Name="modified" />
+    </Key>
+    <Property Name="uidInstanceID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="state" Type="image" />
+    <Property Name="status" Type="int" />
+    <Property Name="unlocked" Type="int" />
+    <Property Name="blocked" Type="int" />
+    <Property Name="info" Type="ntext" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+    <Property Name="ownerID" Type="uniqueidentifier" />
+    <Property Name="ownedUntil" Type="datetime" />
+    <Property Name="nextTimer" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="wfActivityStates">
+    <Key>
+      <PropertyRef Name="ActivityStateName" />
+    </Key>
+    <Property Name="ActivityStateName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OBJ_VERSION" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="PageKey" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="wfCartable">
+    <Key>
+      <PropertyRef Name="CartableId" />
+    </Key>
+    <Property Name="CartableId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="WorkflowId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ParentWorkflowId" Type="uniqueidentifier" />
+    <Property Name="ItemId" Type="int" />
+    <Property Name="ActivityStateName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StatusId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2500" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ActionDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="wfProfile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Age" Type="int" />
+    <Property Name="FistName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdentityNo" Type="int" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+    <Property Name="Degree" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegistDate" Type="datetime" />
+    <Property Name="IsRegisterOk" Type="bit" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="50" />
+    <Property Name="YearExperiences" Type="nvarchar" MaxLength="50" />
+    <Property Name="Experiences" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Interesting" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDocumentsOK" Type="bit" />
+    <Property Name="IQScore" Type="int" />
+    <Property Name="LanguageScore" Type="int" />
+    <Property Name="TechnicalScore" Type="int" />
+    <Property Name="PersonalityScore" Type="int" />
+  </EntityType>
+  <EntityType Name="wfUsers">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="wfWorkflowStatus">
+    <Key>
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_wfActivityStates_wfUsers">
+    <End Role="wfUsers" Type="CartableEmploymentModel.Store.wfUsers" Multiplicity="1" />
+    <End Role="wfActivityStates" Type="CartableEmploymentModel.Store.wfActivityStates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wfUsers">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="wfActivityStates">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_wfCartable_wfActivityStates">
+    <End Role="wfActivityStates" Type="CartableEmploymentModel.Store.wfActivityStates" Multiplicity="1" />
+    <End Role="wfCartable" Type="CartableEmploymentModel.Store.wfCartable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wfActivityStates">
+        <PropertyRef Name="ActivityStateName" />
+      </Principal>
+      <Dependent Role="wfCartable">
+        <PropertyRef Name="ActivityStateName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_wfCartable_wfWorkflowStatus">
+    <End Role="wfWorkflowStatus" Type="CartableEmploymentModel.Store.wfWorkflowStatus" Multiplicity="0..1" />
+    <End Role="wfCartable" Type="CartableEmploymentModel.Store.wfCartable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wfWorkflowStatus">
+        <PropertyRef Name="Status" />
+      </Principal>
+      <Dependent Role="wfCartable">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

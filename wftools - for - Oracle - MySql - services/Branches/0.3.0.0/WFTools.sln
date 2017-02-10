@@ -1,0 +1,170 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Activities", "Activities\WFTools.Activities.csproj", "{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Services", "Services\WFTools.Services.csproj", "{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VersionControl", "VersionControl", "{20317460-7D6F-4E6C-8091-77674CD7FE8F}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		InstallationNotes.txt = InstallationNotes.txt
+		ReleaseNotes.txt = ReleaseNotes.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Web", "Web\WFTools.Web.csproj", "{1E6B3E57-7AE7-4100-9539-40E58C754E97}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Utilities", "Utilities\WFTools.Utilities.csproj", "{CB650825-DA70-4B89-9F00-CC5FEA845E26}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Windows", "Windows\WFTools.Windows.csproj", "{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "WFTools.DB", "DB\WFTools.DB.dbp", "{F85A58A9-48A4-4E84-991A-0259EE06768A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Samples.Windows", "Samples\Windows\WFTools.Samples.Windows.csproj", "{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Samples.WorkFlow", "Samples\WorkFlow\WFTools.Samples.WorkFlow.csproj", "{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Services.MySql", "Services.MySql\WFTools.Services.MySql.csproj", "{10756EA8-6552-46C5-93DE-3112C58414E7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Services.Odp", "Services.Odp\WFTools.Services.Odp.csproj", "{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Resources", "Resources\WFTools.Resources.csproj", "{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Activities\\WFTools.Activities.csproj
+		SccProjectName1 = Activities
+		SccLocalPath1 = Activities
+		SccProjectUniqueName2 = Services\\WFTools.Services.csproj
+		SccProjectName2 = Services
+		SccLocalPath2 = Services
+		SccProjectUniqueName3 = Web\\WFTools.Web.csproj
+		SccProjectName3 = Web
+		SccLocalPath3 = Web
+		SccProjectUniqueName4 = Utilities\\WFTools.Utilities.csproj
+		SccProjectName4 = Utilities
+		SccLocalPath4 = Utilities
+		SccProjectUniqueName5 = Windows\\WFTools.Windows.csproj
+		SccProjectName5 = Windows
+		SccLocalPath5 = Windows
+		SccProjectUniqueName6 = DB\\WFTools.DB.dbp
+		SccProjectName6 = DB
+		SccLocalPath6 = DB
+		SccProjectUniqueName7 = Samples\\Windows\\WFTools.Samples.Windows.csproj
+		SccProjectName7 = Samples/Windows
+		SccLocalPath7 = Samples\\Windows
+		SccProjectUniqueName8 = Samples\\WorkFlow\\WFTools.Samples.WorkFlow.csproj
+		SccProjectName8 = Samples/WorkFlow
+		SccLocalPath8 = Samples\\WorkFlow
+		SccProjectUniqueName9 = Services.MySql\\WFTools.Services.MySql.csproj
+		SccProjectName9 = Services.MySql
+		SccLocalPath9 = Services.MySql
+		SccProjectUniqueName10 = Services.Odp\\WFTools.Services.Odp.csproj
+		SccProjectName10 = Services.Odp
+		SccLocalPath10 = Services.Odp
+		SccProjectUniqueName11 = Resources\\WFTools.Resources.csproj
+		SccProjectName11 = Resources
+		SccLocalPath11 = Resources
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="StateMachineWorkflow" Location="30, 30" Size="788, 456" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Completed" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="DelaySetCompletedState" SourceStateName="Started" SourceConnectionEdge="Right" TargetActivity="Completed" SourceActivity="Started" EventHandlerName="AwaitDelay">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="151" Y="115" />
+				<ns0:Point X="215" Y="115" />
+				<ns0:Point X="215" Y="182" />
+				<ns0:Point X="126" Y="182" />
+				<ns0:Point X="126" Y="187" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Completed" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="EventSetCompletedState" SourceStateName="Started" SourceConnectionEdge="Right" TargetActivity="Completed" SourceActivity="Started" EventHandlerName="AwaitEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="151" Y="141" />
+				<ns0:Point X="215" Y="141" />
+				<ns0:Point X="215" Y="182" />
+				<ns0:Point X="126" Y="182" />
+				<ns0:Point X="126" Y="187" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="Started" Location="46, 71" Size="160, 100" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Size="150, 206" Name="AwaitDelay" Location="54, 104">
+					<EventDrivenDesigner.Designers>
+						<DelayDesigner Size="130, 41" Name="Delay" Location="64, 169" />
+						<SetStateDesigner Size="130, 62" Name="DelaySetCompletedState" Location="64, 229" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+				<EventDrivenDesigner Size="150, 206" Name="AwaitEvent" Location="54, 130">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="130, 41" Name="HandleEvent" Location="64, 195" />
+						<SetStateDesigner Size="130, 62" Name="EventSetCompletedState" Location="64, 255" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Completed" Location="46, 187" Size="160, 80" AutoSizeMargin="16, 24" />
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

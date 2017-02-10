@@ -1,0 +1,133 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Activities", "Activities\WFTools.Activities.csproj", "{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}"
+EndProject
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "WFTools.DB", "DB\WFTools.DB.dbp", "{DCB56249-49BC-45BB-A0D9-CB3033EDE6DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Resources", "Resources\WFTools.Resources.csproj", "{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Samples.Windows", "Samples\Windows\WFTools.Samples.Windows.csproj", "{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Samples.WorkFlow", "Samples\WorkFlow\WFTools.Samples.WorkFlow.csproj", "{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Services", "Services\WFTools.Services.csproj", "{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Services.MySql", "Services.MySql\WFTools.Services.MySql.csproj", "{10756EA8-6552-46C5-93DE-3112C58414E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Services.Odp", "Services.Odp\WFTools.Services.Odp.csproj", "{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Tests", "Tests\WFTools.Tests.csproj", "{E6376D39-E5EF-4754-8506-1CF57DD7ED1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Utilities", "Utilities\WFTools.Utilities.csproj", "{CB650825-DA70-4B89-9F00-CC5FEA845E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Web", "Web\WFTools.Web.csproj", "{1E6B3E57-7AE7-4100-9539-40E58C754E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFTools.Windows", "Windows\WFTools.Windows.csproj", "{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E3762AB-7F86-4327-9473-8A767CBACBE0}"
+	ProjectSection(SolutionItems) = preProject
+		WFTools-2008.testrunconfig = WFTools-2008.testrunconfig
+		WFTools-2008.vsmdi = WFTools-2008.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WFTools-2008.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60841268-076B-4A7F-A5DE-B8A1EA3EEC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6485DC3F-08A9-4BC9-AEC0-FD37E2717604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530AB894-3B5E-44E4-AA39-5104ECE8ED6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B243A7EA-6D71-4B9D-A8F9-38650B15C0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDBD4BB-BC33-421E-8086-68BD23AC90A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10756EA8-6552-46C5-93DE-3112C58414E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69B5D0F-D58D-447C-87A9-388D1F00EBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6376D39-E5EF-4754-8506-1CF57DD7ED1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6376D39-E5EF-4754-8506-1CF57DD7ED1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6376D39-E5EF-4754-8506-1CF57DD7ED1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6376D39-E5EF-4754-8506-1CF57DD7ED1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB650825-DA70-4B89-9F00-CC5FEA845E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6B3E57-7AE7-4100-9539-40E58C754E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0C2A89-5240-4AEA-9CE1-9DF594C71845}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Activities\\WFTools.Activities.csproj
+		SccProjectName1 = Activities
+		SccLocalPath1 = Activities
+		SccProjectUniqueName2 = DB\\WFTools.DB.dbp
+		SccProjectName2 = DB
+		SccLocalPath2 = DB
+		SccProjectUniqueName3 = Resources\\WFTools.Resources.csproj
+		SccProjectName3 = Resources
+		SccLocalPath3 = Resources
+		SccProjectUniqueName4 = Samples\\Windows\\WFTools.Samples.Windows.csproj
+		SccProjectName4 = Samples/Windows
+		SccLocalPath4 = Samples\\Windows
+		SccProjectUniqueName5 = Samples\\WorkFlow\\WFTools.Samples.WorkFlow.csproj
+		SccProjectName5 = Samples/WorkFlow
+		SccLocalPath5 = Samples\\WorkFlow
+		SccProjectUniqueName6 = Services\\WFTools.Services.csproj
+		SccProjectName6 = Services
+		SccLocalPath6 = Services
+		SccProjectUniqueName7 = Services.MySql\\WFTools.Services.MySql.csproj
+		SccProjectName7 = Services.MySql
+		SccLocalPath7 = Services.MySql
+		SccProjectUniqueName8 = Services.Odp\\WFTools.Services.Odp.csproj
+		SccProjectName8 = Services.Odp
+		SccLocalPath8 = Services.Odp
+		SccProjectUniqueName9 = Tests\\WFTools.Tests.csproj
+		SccProjectName9 = Tests
+		SccLocalPath9 = Tests
+		SccProjectUniqueName10 = Utilities\\WFTools.Utilities.csproj
+		SccProjectName10 = Utilities
+		SccLocalPath10 = Utilities
+		SccProjectUniqueName11 = Web\\WFTools.Web.csproj
+		SccProjectName11 = Web
+		SccLocalPath11 = Web
+		SccProjectUniqueName12 = Windows\\WFTools.Windows.csproj
+		SccProjectName12 = Windows
+		SccLocalPath12 = Windows
+	EndGlobalSection
+EndGlobal

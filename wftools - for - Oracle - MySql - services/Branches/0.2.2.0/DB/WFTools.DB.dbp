@@ -1,0 +1,36 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "WFTools.DB"
+   MSDTVersion = "80"
+   SccProjectName = "SAK"
+   SccLocalPath = "SAK"
+   SccAuxPath = "SAK"
+   SccProvider = "SAK"
+   Begin DBRefFolder = "Database References"
+   End
+   Begin Folder = "Persistence"
+      Begin Folder = "MySql"
+         Begin Folder = "Stored Procedures"
+            Script = "InsertCompletedScope.sql"
+            Script = "InsertInstanceState.sql"
+            Script = "RetrieveCompletedScope.sql"
+            Script = "RetrieveExpiredTimerIds.sql"
+            Script = "RetrieveInstanceState.sql"
+            Script = "RetrieveNonblockingInstanceIds.sql"
+            Script = "UnlockInstanceState.sql"
+         End
+         Begin Folder = "Tables"
+            Script = "COMPLETED_SCOPE.sql"
+            Script = "INSTANCE_STATE.sql"
+         End
+      End
+      Begin Folder = "Oracle"
+         Begin Folder = "Packages"
+            Script = "WORKFLOW_PKG.sql"
+         End
+         Begin Folder = "Tables"
+            Script = "COMPLETED_SCOPE.sql"
+            Script = "INSTANCE_STATE.sql"
+         End
+      End
+   End
+End

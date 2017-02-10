@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestList name="Persistence Service" id="3aa20a57-5285-4b2a-9879-0593f751b6a5" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>All tests for the persistence service</Description>
+    <TestLinks>
+      <TestLink id="de4591d6-615c-479b-bb1a-6801bedd4d0c" name="PersistenceTests" storage="tests\persistencetests.orderedtest" type="Microsoft.VisualStudio.TestTools.TestTypes.Ordered.AutoSuite, Microsoft.VisualStudio.QualityTools.Tips.OrderedTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="b139dcaf-a8cc-40d3-bac5-6e8d7496fd85" name="WFTools-2008" storage="wftools-2008.testrunconfig" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+</TestLists>

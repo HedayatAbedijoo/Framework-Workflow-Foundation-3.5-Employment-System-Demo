@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="CartableEmploymentModelStoreContainer" CdmEntityContainer="CartableEmploymentEntities">
+    <EntitySetMapping Name="CompletedScope">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.CompletedScope)">
+        <MappingFragment StoreEntitySet="CompletedScope">
+          <ScalarProperty Name="uidInstanceID" ColumnName="uidInstanceID" />
+          <ScalarProperty Name="completedScopeID" ColumnName="completedScopeID" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InstanceState">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.InstanceState)">
+        <MappingFragment StoreEntitySet="InstanceState">
+          <ScalarProperty Name="uidInstanceID" ColumnName="uidInstanceID" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="unlocked" ColumnName="unlocked" />
+          <ScalarProperty Name="blocked" ColumnName="blocked" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="ownerID" ColumnName="ownerID" />
+          <ScalarProperty Name="ownedUntil" ColumnName="ownedUntil" />
+          <ScalarProperty Name="nextTimer" ColumnName="nextTimer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfActivityStates">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.wfActivityStates)">
+        <MappingFragment StoreEntitySet="wfActivityStates">
+          <ScalarProperty Name="ActivityStateName" ColumnName="ActivityStateName" />
+          <ScalarProperty Name="OBJ_VERSION" ColumnName="OBJ_VERSION" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PageKey" ColumnName="PageKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfCartable">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.wfCartable)">
+        <MappingFragment StoreEntitySet="wfCartable">
+          <ScalarProperty Name="CartableId" ColumnName="CartableId" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="ParentWorkflowId" ColumnName="ParentWorkflowId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfProfile">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.wfProfile)">
+        <MappingFragment StoreEntitySet="wfProfile">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="FistName" ColumnName="FistName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="RegistDate" ColumnName="RegistDate" />
+          <ScalarProperty Name="IsRegisterOk" ColumnName="IsRegisterOk" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="YearExperiences" ColumnName="YearExperiences" />
+          <ScalarProperty Name="Experiences" ColumnName="Experiences" />
+          <ScalarProperty Name="Interesting" ColumnName="Interesting" />
+          <ScalarProperty Name="IsDocumentsOK" ColumnName="IsDocumentsOK" />
+          <ScalarProperty Name="IQScore" ColumnName="IQScore" />
+          <ScalarProperty Name="LanguageScore" ColumnName="LanguageScore" />
+          <ScalarProperty Name="TechnicalScore" ColumnName="TechnicalScore" />
+          <ScalarProperty Name="PersonalityScore" ColumnName="PersonalityScore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfUsers">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.wfUsers)">
+        <MappingFragment StoreEntitySet="wfUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfWorkflowStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(CartableEmploymentModel.wfWorkflowStatus)">
+        <MappingFragment StoreEntitySet="wfWorkflowStatus">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_wfActivityStates_wfUsers" TypeName="CartableEmploymentModel.FK_wfActivityStates_wfUsers" StoreEntitySet="wfActivityStates">
+      <EndProperty Name="wfUsers">
+        <ScalarProperty Name="UserName" ColumnName="UserName" />
+      </EndProperty>
+      <EndProperty Name="wfActivityStates">
+        <ScalarProperty Name="ActivityStateName" ColumnName="ActivityStateName" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_wfCartable_wfActivityStates" TypeName="CartableEmploymentModel.FK_wfCartable_wfActivityStates" StoreEntitySet="wfCartable">
+      <EndProperty Name="wfActivityStates">
+        <ScalarProperty Name="ActivityStateName" ColumnName="ActivityStateName" />
+      </EndProperty>
+      <EndProperty Name="wfCartable">
+        <ScalarProperty Name="CartableId" ColumnName="CartableId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_wfCartable_wfWorkflowStatus" TypeName="CartableEmploymentModel.FK_wfCartable_wfWorkflowStatus" StoreEntitySet="wfCartable">
+      <EndProperty Name="wfWorkflowStatus">
+        <ScalarProperty Name="Status" ColumnName="StatusId" />
+      </EndProperty>
+      <EndProperty Name="wfCartable">
+        <ScalarProperty Name="CartableId" ColumnName="CartableId" />
+      </EndProperty>
+      <Condition ColumnName="StatusId" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
